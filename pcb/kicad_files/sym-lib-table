@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name redox_rev1-rescue)(type Legacy)(uri ${KIPRJMOD}/redox_rev1-rescue.lib)(options "")(descr ""))
+)
