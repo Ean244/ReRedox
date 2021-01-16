@@ -5,4 +5,5 @@
   (lib (name Keebio-Parts)(type KiCad)(uri C:/Users/User/Desktop/ReRedox/pcb/libs/Keebio-Parts.pretty)(options "")(descr ""))
   (lib (name keyswitches)(type KiCad)(uri C:/Users/User/Desktop/ReRedox/pcb/libs/keyswitches.pretty)(options "")(descr ""))
   (lib (name redox_footprints)(type KiCad)(uri C:/Users/User/Desktop/ReRedox/pcb/redox_footprints.pretty)(options "")(descr ""))
+  (lib (name Lily58_Pro-footprint)(type KiCad)(uri C:/Users/User/Desktop/ReRedox/pcb/Lily58_Pro-footprint.pretty)(options "")(descr ""))
 )
