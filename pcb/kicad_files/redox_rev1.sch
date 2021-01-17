@@ -25,17 +25,6 @@ F 3 "" V 3400 -350 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L redox_rev1-rescue:Audio-Jack-4 TRRS1
-U 1 1 5A8087E2
-P 1100 3200
-F 0 "TRRS1" H 1050 3280 50  0000 C CNN
-F 1 "Audio-Jack-4" H 1220 2830 50  0000 C CNN
-F 2 "Keebio-Parts:TRRS-PJ-320A-dual" H 1350 3300 50  0001 C CNN
-F 3 "" H 1350 3300 50  0001 C CNN
-	1    1100 3200
-	1    0    0    -1  
-$EndComp
-$Comp
 L redox_rev1-rescue:Conn_01x03 RGB_STRIP1
 U 1 1 5A8088A7
 P 1750 4200
@@ -144,7 +133,6 @@ Text GLabel 1450 1600 0    60   Input ~ 0
 rgb_data
 Wire Wire Line
 	1450 1600 1650 1600
-NoConn ~ 1650 1700
 NoConn ~ 1650 2300
 NoConn ~ 3050 2000
 $Comp
@@ -158,14 +146,6 @@ F 3 "" H 900 3600 50  0001 C CNN
 	1    900  3600
 	1    0    0    -1  
 $EndComp
-Text GLabel 1850 3200 2    60   Input ~ 0
-SDA
-Text GLabel 1850 3300 2    60   Input ~ 0
-SCL
-Wire Wire Line
-	1300 3200 1450 3200
-Wire Wire Line
-	1300 3300 1700 3300
 $Comp
 L power:GND #PWR04
 U 1 1 5A808EA3
@@ -371,30 +351,6 @@ F 3 "" H 8600 1750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8600 1500 8600 1600
-$Comp
-L redox_rev1-rescue:KEYSW K6
-U 1 1 5A8094A7
-P 9700 1500
-F 0 "K6" H 9650 1500 60  0000 C CNN
-F 1 "KEYSW" H 9700 1400 60  0001 C CNN
-F 2 "keyswitches:SW_MX_reversible" H 9700 1500 60  0001 C CNN
-F 3 "" H 9700 1500 60  0000 C CNN
-	1    9700 1500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D D6
-U 1 1 5A8094AD
-P 9400 1750
-F 0 "D6" H 9400 1850 50  0000 C CNN
-F 1 "D" H 9400 1650 50  0000 C CNN
-F 2 "Keebio-Parts:Diode-dual" H 9400 1750 50  0001 C CNN
-F 3 "" H 9400 1750 50  0001 C CNN
-	1    9400 1750
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	9400 1500 9400 1600
 Wire Wire Line
 	4500 1900 4600 1900
 Connection ~ 5400 1900
@@ -546,30 +502,6 @@ F 3 "" H 8600 2500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8600 2250 8600 2350
-$Comp
-L redox_rev1-rescue:KEYSW K16
-U 1 1 5A809C6B
-P 9700 2250
-F 0 "K16" H 9650 2250 60  0000 C CNN
-F 1 "KEYSW" H 9700 2150 60  0001 C CNN
-F 2 "keyswitches:SW_MX_reversible" H 9700 2250 60  0001 C CNN
-F 3 "" H 9700 2250 60  0000 C CNN
-	1    9700 2250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D D16
-U 1 1 5A809C71
-P 9400 2500
-F 0 "D16" H 9400 2600 50  0000 C CNN
-F 1 "D" H 9400 2400 50  0000 C CNN
-F 2 "Keebio-Parts:Diode-dual" H 9400 2500 50  0001 C CNN
-F 3 "" H 9400 2500 50  0001 C CNN
-	1    9400 2500
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	9400 2250 9400 2350
 Wire Wire Line
 	4500 2650 4600 2650
 Connection ~ 5400 2650
@@ -1143,10 +1075,6 @@ Connection ~ 9200 1500
 Connection ~ 9200 2250
 Connection ~ 9200 2950
 Connection ~ 9200 3700
-Wire Wire Line
-	10000 1350 10000 1500
-Connection ~ 10000 1500
-Connection ~ 10000 2250
 Connection ~ 10000 2950
 Connection ~ 10000 3700
 Text GLabel 4500 1900 0    60   Input ~ 0
@@ -1171,51 +1099,6 @@ Text GLabel 8400 1300 1    60   Input ~ 0
 col4
 Text GLabel 9200 1350 1    60   Input ~ 0
 col5
-Text GLabel 10000 1350 1    60   Input ~ 0
-col6
-$Comp
-L Device:R R1
-U 1 1 5A80A2DF
-P 1450 3350
-F 0 "R1" V 1530 3350 50  0000 C CNN
-F 1 "4.7k" V 1450 3350 50  0000 C CNN
-F 2 "Keebio-Parts:Resistor-Compact" V 1380 3350 50  0001 C CNN
-F 3 "" H 1450 3350 50  0001 C CNN
-	1    1450 3350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R2
-U 1 1 5A80A522
-P 1700 3450
-F 0 "R2" V 1780 3450 50  0000 C CNN
-F 1 "4.7k" V 1700 3450 50  0000 C CNN
-F 2 "Keebio-Parts:Resistor-Compact" V 1630 3450 50  0001 C CNN
-F 3 "" H 1700 3450 50  0001 C CNN
-	1    1700 3450
-	1    0    0    -1  
-$EndComp
-Connection ~ 1450 3200
-Connection ~ 1700 3300
-$Comp
-L power:VCC #PWR09
-U 1 1 5A80ACC6
-P 1900 3600
-F 0 "#PWR09" H 1900 3450 50  0001 C CNN
-F 1 "VCC" H 1900 3750 50  0000 C CNN
-F 2 "" H 1900 3600 50  0001 C CNN
-F 3 "" H 1900 3600 50  0001 C CNN
-	1    1900 3600
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1300 3400 1300 3600
-Wire Wire Line
-	1300 3600 1450 3600
-Wire Wire Line
-	1450 3500 1450 3600
-Connection ~ 1450 3600
-Connection ~ 1700 3600
 Wire Wire Line
 	5400 1900 6200 1900
 Wire Wire Line
@@ -1325,21 +1208,9 @@ Wire Wire Line
 Wire Wire Line
 	9200 3700 9200 4500
 Wire Wire Line
-	10000 1500 10000 2250
-Wire Wire Line
-	10000 2250 10000 2950
-Wire Wire Line
 	10000 2950 10000 3700
 Wire Wire Line
 	10000 3700 10000 4500
-Wire Wire Line
-	1450 3200 1850 3200
-Wire Wire Line
-	1700 3300 1850 3300
-Wire Wire Line
-	1450 3600 1700 3600
-Wire Wire Line
-	1700 3600 1900 3600
 $Comp
 L Lily58_Pro-rescue:OLED-Lily58-cache J1
 U 1 1 600441B6
@@ -1351,34 +1222,219 @@ F 3 "" H 1000 5450 50  0000 C CNN
 	1    1000 5450
 	-1   0    0    1   
 $EndComp
+Text GLabel 10000 1350 1    60   Input ~ 0
+col6
+Wire Wire Line
+	10000 1350 10000 2950
+Text GLabel 1350 1700 0    60   Input ~ 0
+serial
+$Comp
+L redox_rev1-rescue:Audio-Jack-4 TRRS1
+U 1 1 5A8087E2
+P 1100 3200
+F 0 "TRRS1" H 1050 3280 50  0000 C CNN
+F 1 "Audio-Jack-4" H 1220 2830 50  0000 C CNN
+F 2 "Keebio-Parts:TRRS-PJ-320A-dual" H 1350 3300 50  0001 C CNN
+F 3 "" H 1350 3300 50  0001 C CNN
+	1    1100 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 3400 1300 3600
+$Comp
+L power:VCC #PWR09
+U 1 1 5A80ACC6
+P 1900 3600
+F 0 "#PWR09" H 1900 3450 50  0001 C CNN
+F 1 "VCC" H 1900 3750 50  0000 C CNN
+F 2 "" H 1900 3600 50  0001 C CNN
+F 3 "" H 1900 3600 50  0001 C CNN
+	1    1900 3600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1300 3600 1900 3600
+NoConn ~ 1300 3200
+Text GLabel 1550 3300 2    60   Input ~ 0
+serial
+Wire Wire Line
+	1300 3300 1550 3300
+Wire Wire Line
+	1350 1700 1650 1700
+Wire Wire Line
+	1200 5600 1250 5600
+Wire Wire Line
+	1200 5500 1300 5500
+Wire Wire Line
+	1200 5400 1350 5400
+$Comp
+L Device:Jumper_NO_Small JP5
+U 1 1 60176B70
+P 1650 6100
+F 0 "JP5" H 1650 6150 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 1650 6194 50  0001 C CNN
+F 2 "Lily58_Pro-footprint:Jumper" H 1650 6100 50  0001 C CNN
+F 3 "~" H 1650 6100 50  0001 C CNN
+	1    1650 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NO_Small JP6
+U 1 1 60177352
+P 1650 6000
+F 0 "JP6" H 1650 6050 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 1650 6094 50  0001 C CNN
+F 2 "Lily58_Pro-footprint:Jumper" H 1650 6000 50  0001 C CNN
+F 3 "~" H 1650 6000 50  0001 C CNN
+	1    1650 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NO_Small JP8
+U 1 1 60178216
+P 1650 5800
+F 0 "JP8" H 1650 5850 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 1650 5894 50  0001 C CNN
+F 2 "Lily58_Pro-footprint:Jumper" H 1650 5800 50  0001 C CNN
+F 3 "~" H 1650 5800 50  0001 C CNN
+	1    1650 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 5600 1250 6100
+Wire Wire Line
+	1250 6100 1550 6100
+Connection ~ 1250 5600
+Wire Wire Line
+	1250 5600 1550 5600
+Wire Wire Line
+	1300 5500 1300 6000
+Wire Wire Line
+	1300 6000 1550 6000
+Connection ~ 1300 5500
+Wire Wire Line
+	1300 5500 1550 5500
+Wire Wire Line
+	1350 5400 1350 5900
+Connection ~ 1350 5400
+Wire Wire Line
+	1350 5400 1550 5400
+Wire Wire Line
+	1400 5300 1400 5800
+Wire Wire Line
+	1400 5800 1550 5800
+Wire Wire Line
+	1200 5300 1400 5300
+Wire Wire Line
+	1400 5300 1550 5300
+Connection ~ 1400 5300
+$Comp
+L Device:Jumper_NO_Small JP4
+U 1 1 6014FD4A
+P 1650 5300
+F 0 "JP4" H 1650 5350 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 1650 5394 50  0001 C CNN
+F 2 "Lily58_Pro-footprint:Jumper" H 1650 5300 50  0001 C CNN
+F 3 "~" H 1650 5300 50  0001 C CNN
+	1    1650 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NO_Small JP3
+U 1 1 6014F9D2
+P 1650 5400
+F 0 "JP3" H 1650 5450 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 1650 5494 50  0001 C CNN
+F 2 "Lily58_Pro-footprint:Jumper" H 1650 5400 50  0001 C CNN
+F 3 "~" H 1650 5400 50  0001 C CNN
+	1    1650 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NO_Small JP2
+U 1 1 6014E88B
+P 1650 5500
+F 0 "JP2" H 1650 5550 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 1650 5594 50  0001 C CNN
+F 2 "Lily58_Pro-footprint:Jumper" H 1650 5500 50  0001 C CNN
+F 3 "~" H 1650 5500 50  0001 C CNN
+	1    1650 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NO_Small JP1
+U 1 1 6014D1BE
+P 1650 5600
+F 0 "JP1" H 1650 5650 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 1650 5694 50  0001 C CNN
+F 2 "Lily58_Pro-footprint:Jumper" H 1650 5600 50  0001 C CNN
+F 3 "~" H 1650 5600 50  0001 C CNN
+	1    1650 5600
+	1    0    0    -1  
+$EndComp
+Text GLabel 1750 5800 2    60   Input ~ 0
+SDA
+$Comp
+L power:VCC #PWR0104
+U 1 1 600459C9
+P 1750 6000
+F 0 "#PWR0104" H 1750 5850 50  0001 C CNN
+F 1 "VCC" V 1767 6128 50  0000 L CNN
+F 2 "" H 1750 6000 50  0001 C CNN
+F 3 "" H 1750 6000 50  0001 C CNN
+	1    1750 6000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 601A8E69
+P 1750 6100
+F 0 "#PWR0103" H 1750 5850 50  0001 C CNN
+F 1 "GND" V 1755 5972 50  0000 R CNN
+F 2 "" H 1750 6100 50  0001 C CNN
+F 3 "" H 1750 6100 50  0001 C CNN
+	1    1750 6100
+	0    -1   -1   0   
+$EndComp
 $Comp
 L power:GND #PWR0101
 U 1 1 60058856
-P 1200 5600
-F 0 "#PWR0101" H 1200 5350 50  0001 C CNN
-F 1 "GND" V 1205 5472 50  0000 R CNN
-F 2 "" H 1200 5600 50  0001 C CNN
-F 3 "" H 1200 5600 50  0001 C CNN
-	1    1200 5600
+P 1750 5300
+F 0 "#PWR0101" H 1750 5050 50  0001 C CNN
+F 1 "GND" V 1755 5172 50  0000 R CNN
+F 2 "" H 1750 5300 50  0001 C CNN
+F 3 "" H 1750 5300 50  0001 C CNN
+	1    1750 5300
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:VCC #PWR0102
 U 1 1 6005A912
-P 1200 5500
-F 0 "#PWR0102" H 1200 5350 50  0001 C CNN
-F 1 "VCC" V 1217 5628 50  0000 L CNN
-F 2 "" H 1200 5500 50  0001 C CNN
-F 3 "" H 1200 5500 50  0001 C CNN
-	1    1200 5500
+P 1750 5400
+F 0 "#PWR0102" H 1750 5250 50  0001 C CNN
+F 1 "VCC" V 1767 5528 50  0000 L CNN
+F 2 "" H 1750 5400 50  0001 C CNN
+F 3 "" H 1750 5400 50  0001 C CNN
+	1    1750 5400
 	0    1    1    0   
 $EndComp
-Text GLabel 1450 5400 2    60   Input ~ 0
-SCL
-Text GLabel 1450 5300 2    60   Input ~ 0
+Text GLabel 1750 5600 2    60   Input ~ 0
 SDA
+Text GLabel 1750 5500 2    60   Input ~ 0
+SCL
 Wire Wire Line
-	1200 5400 1450 5400
-Wire Wire Line
-	1200 5300 1450 5300
+	1350 5900 1550 5900
+Text GLabel 1750 5900 2    60   Input ~ 0
+SCL
+$Comp
+L Device:Jumper_NO_Small JP7
+U 1 1 60177AAB
+P 1650 5900
+F 0 "JP7" H 1650 5950 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 1650 5994 50  0001 C CNN
+F 2 "Lily58_Pro-footprint:Jumper" H 1650 5900 50  0001 C CNN
+F 3 "~" H 1650 5900 50  0001 C CNN
+	1    1650 5900
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
