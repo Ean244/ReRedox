@@ -10,4 +10,4 @@ Key modifications include:
   * Some board manufacturers do not accept irregular shapes (for me it was JLCPB)
 * Adding support stands for a 6 degree tilt
 
-A sandwich transparent acrylic casing was designed for Terminal v1.
+A [sandwich transparent acrylic casing](https://github.com/Ean244/Terminal-Acrylic-Casing) was designed for Terminal v1.
