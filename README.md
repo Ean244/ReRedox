@@ -1,6 +1,6 @@
-## ReRedox
+## Terminal v1
 
-Reredox is a ergonomic split keyboard design modified from the [Redox Project](https://github.com/mattdibi/redox-keyboard) by [Mattia Dal Ben (aka u/TiaMaT102)](mailto:matthewdibi@gmail.com).
+Terminal is a ergonomic split keyboard design modified from the [Redox Project](https://github.com/mattdibi/redox-keyboard) by [Mattia Dal Ben (aka u/TiaMaT102)](mailto:matthewdibi@gmail.com).
 
 Key modifications include:
 
@@ -10,4 +10,4 @@ Key modifications include:
   * Some board manufacturers do not accept irregular shapes (for me it was JLCPB)
 * Adding support stands for a 6 degree tilt
 
-A sandwich transparent acrylic casing was designed for ReRedox.
+A sandwich transparent acrylic casing was designed for Terminal v1.
