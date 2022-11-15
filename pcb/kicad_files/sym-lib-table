@@ -1,4 +1,0 @@
-(sym_lib_table
-  (lib (name "redox_rev1-rescue")(type "Legacy")(uri "${KIPRJMOD}/redox_rev1-rescue.lib")(options "")(descr ""))
-  (lib (name "Lily58_Pro-rescue")(type "Legacy")(uri "${KIPRJMOD}/libs/Lily58_Pro-rescue.lib")(options "")(descr ""))
-)
